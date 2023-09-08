@@ -1,0 +1,28 @@
+====================
+     09-08-2023
+====================
+
+* device/xiaomi/psyche
+
+    Update AID/fs config From LA.UM.9.12.r1-15100-SMxx50.0
+    Update public libraries list From Xiaomi/psyche/psyche:13/RKQ1.211001.001/V14.0.23.7.10.DEV:user/release-keys
+    Import missing ADSPRPC
+    parts: Add per app maximum refresh rate
+    Set default refresh rate to 120Hz
+    Go to Enforcing
+    Disable UI touch sounds by default
+    Disable AAudio MMAP 
+    increase media volume steps from 15 to 25
+    improve round corner radius and mask
+    And few stuff else
+
+* kernel/xiaomi/sm8250
+
+    ARM64: dts: vendor: Update Xiaomi changes  from pipa-r-oss
+    ARM64: dts: L3A-MP: Kill 90hz
+    techpack: camera-xiaomi: Import Changes for psyche (FIx OIS)
+    techpack: audio: Reimport Xiaomi changes
+    Android.bp: allow system to use generated kernel headers 
+
+* ROM side
+    Update from last sources

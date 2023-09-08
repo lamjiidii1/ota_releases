@@ -32,7 +32,7 @@ On the host machine, sideload the package using: `adb sideload filename.zip`
 - Encryption Enabled by default
 - Don't seek support if you modify the ROM in any way including magisk and gapps.
 - Please report bugs with logs if you found any.
-- If you are comming from another custom ROM that use vendor_boot as recovery you won't be able to boot to recovery until you flash dtbo and vendor parts via fastboot: `fastboot flash dtbo dtbo.img` `fastboot flash vendor_boot vendor_boot.img`
+- If you are comming from another custom ROM that use vendor_boot as recovery you won't be able to boot to recovery until you flash dtbo and vendor_boot via fastboot: `fastboot flash dtbo dtbo.img` `fastboot flash vendor_boot vendor_boot.img`
 
 **Special Thanks:**
 - [SebaUbuntu](https://github.com/SebaUbuntu) For Common Trees
