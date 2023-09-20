@@ -1,5 +1,5 @@
 ====================
-     09-08-2023
+     Sep-20-2023
 ====================
 
 * device/xiaomi/psyche
@@ -9,12 +9,25 @@
     Import missing ADSPRPC
     parts: Add per app maximum refresh rate
     Set default refresh rate to 120Hz
-    Go to Enforcing
     Disable UI touch sounds by default
     Disable AAudio MMAP 
     increase media volume steps from 15 to 25
     improve round corner radius and mask
-    And few stuff else
+    Enable display async powermode
+    Update to Boot Control HAL v1.2
+    Improve haptic and vibe patterns
+    Enable zram & zram writeback 
+    Disable kpti
+    Add support for udfps long press sensor (Screen off fod)
+    Remove Bumb Sample rate feature
+    Nuck Lineage health HAL
+    psyche: Increase volume speaker
+    Disable global mode and CDMA choices
+    Use FUSE passthrough mode by default 
+    Bypass selinux status
+    Add xiaomi cit sensor service 
+    Include MIUI firmware in OTA
+    And more stuff else (Please check dt commit history)
 
 * kernel/xiaomi/sm8250
 
@@ -23,6 +36,8 @@
     techpack: camera-xiaomi: Import Changes for psyche (FIx OIS)
     techpack: audio: Reimport Xiaomi changes
     Android.bp: allow system to use generated kernel headers 
+    Include Kernel SU
 
 * ROM side
+
     Update from last sources

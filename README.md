@@ -9,10 +9,14 @@
 
 **First time installation:**
 - Make sure you backup your data
-- Install LineageOS recovery via fastboot: `fastboot flash boot filename.img`
-- Now reboot into recovery to verify the installation
-- Sideload the latest [Android 13 firmware](https://xiaomifirmwareupdater.com/firmware/psyche/) of your device variant
-- Now tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage
+- Download needed stuff (rom_archive.zip, boot.img, dtbo.img and vendor_boot.img)
+- Install LineageOS recovery via fastboot : 
+  - `fastboot flash boot_ab boot.img`
+  - `fastboot flash dtbo_ab dtbo.img`
+  - `fastboot flash vendor_boot_ab vendor_boot.img`
+
+- Then reboot into recovery via fastboot: ("`  fastboot reboot recovery  `") or by power and Vol+
+- When get booted to recovery tap Factory Reset, then Format data / factory reset and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage
 - Return to the main menu and reboot into recovery
 - Sideload the LineageOS .zip:
 On the device, select “Apply Update”, then “Apply from ADB” to begin sideload
@@ -29,10 +33,10 @@ On the host machine, sideload the package using: `adb sideload filename.zip`
 
 **NOTES:**
 - Make sure to flash newer recovery with each release to stay updated
+- Custom RECOVERy's are not supported in any way
 - Encryption Enabled by default
 - Don't seek support if you modify the ROM in any way including magisk and gapps.
 - Please report bugs with logs if you found any.
-- If you are comming from another custom ROM that use vendor_boot as recovery you won't be able to boot to recovery until you flash dtbo and vendor_boot via fastboot: `fastboot flash dtbo dtbo.img` `fastboot flash vendor_boot vendor_boot.img`
 
 **Special Thanks:**
 - [SebaUbuntu](https://github.com/SebaUbuntu) For Common Trees
@@ -41,9 +45,9 @@ On the host machine, sideload the package using: `adb sideload filename.zip`
 
 **Sources:**
 - [Device tree](https://github.com/lamjiidii1/android_device_xiaomi_psyche)  | `lineage-20` branch
-- [Kernel](https://github.com/lamjiidii1/android_kernel_xiaomi_sm8250)  | `lineage-20` branch
-- [Hardware](https://github.com/LineageOS/android_hardware_xiaomi)  | `lineage-20` branch
-- [Vendor tree](https://gitlab.com/lamjiidii1/android_vendor_xiaomi_psyche)  | `lineage-20` 
+- [Kernel tree](https://github.com/lamjiidii1/android_kernel_xiaomi_sm8250)  | `lineage-20` branch
+- [Hardware tree](https://github.com/lamjiidii1/android_hardware_xiaomi)  | `lineage-20` branch
+- [Vendor tree](https://gitlab.com/lamjiidii1/android_vendor_xiaomi_psyche)  | `lineage-20` branch
 
 **Ask for help:**
 - Our Group on [Telegram](https://t.me/psychediscussion)
